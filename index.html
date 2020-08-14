@@ -76,13 +76,13 @@
   </div>
   <div id="home-tiles" class="row">
     <div class="col-md-4 col-sm-6 col-xs-12">
-      <a ui-sref="public.menu" href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+   <a ui-sref="public.menuitems({category: 'SP'})" href="#/menu/SP"> <div id="menu-tile"><span>menu</span></div></a>
     </div>
     <div class="col-md-4 col-sm-6 col-xs-12">
   <!--   <a href="single-category.html" onclick="$dc.loadMenuItems('DK');">-->
-    <!-- <a ui-sref="public.menuitems({category: 'SP'})" href="single-category.html">#/menu/SP-->
+    <!-- -->
      <a href="#" onclick="$dc.loadMenuItems({{randomCategoryShortName}});">
-     
+       <a ui-sref="public.menu" href="menu-categories.html">
       <div id="specials-tile"><span>specials</span></div>
       </a>
     </div>
